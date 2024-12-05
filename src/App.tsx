@@ -4,7 +4,7 @@ import Home from "./pages/home/Home";
 
 function App() {
   useEffect(() => {
-    document.title = "Musab DashBord";
+    document.title = "Musab Dashbord";
   }, []);
 
   return (

@@ -1,16 +1,14 @@
 import Button from "../Button";
 
-function Menus({
-  data,
-  style,
-  subTitle,
-}: {
+type MenusProps = {
   data: any[];
-  style: string;
-  subTitle: string;
-}) {
+  style?: string;
+  subTitle?: string;
+};
+
+function Menus({ data, style, subTitle }: MenusProps) {
   return (
-    <div className={style}>
+    <div className={` ${style}`}>
       {subTitle ? (
         <h1 className="font-bold text-xl mb-[13px]">{subTitle}</h1>
       ) : null}

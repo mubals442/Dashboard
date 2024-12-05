@@ -1,14 +1,16 @@
 import React from "react";
+import Logo from "../../assets/Logo.svg";
+import LineLogo from "../../assets/LineLogo.svg";
 
 function Logos() {
   return (
     <div>
       <div className="flex">
-        <h1 className="mr-4"> img</h1>
-        <h1>MUSAB DASHBOARD</h1>
+        <img src={Logo} alt="Logo" className="mr-4" />
+        <h1 className="font-bold text-[17px]">MUSAB DASHBOARD</h1>
       </div>
       <div className="mt-6">
-        <h1>Line</h1>
+        <img src={LineLogo} alt="line" />
       </div>
     </div>
   );

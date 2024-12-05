@@ -5,11 +5,11 @@ import HelpCards from "./HelpCards";
 
 function SideBar() {
   return (
-    <div className="flex flex-col bg-red-200 w-fit h-screen">
+    <div className="md:flex flex-col w-fit h-screen pt-10 pl-8 hidden">
       <Logos />
       <Menus data={defulteItems} style="mb-4" />
       <Menus data={accountPages} subTitle={"AccountPage"} />
-      <HelpCards/>
+      <HelpCards />
     </div>
   );
 }
